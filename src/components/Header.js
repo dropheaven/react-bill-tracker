@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => (
-  <header>
+  <div id="sidebar">
     <h1>BillTracker</h1>
     <NavLink to="/" exact={true}>
       Dashboard
@@ -13,7 +13,7 @@ const Header = () => (
     <NavLink to="/edit" exact={true}>
       Edit
     </NavLink>
-  </header>
+  </div>
 );
 
 export default Header;
