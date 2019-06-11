@@ -8,7 +8,7 @@ import NotFound from "../components/NotFound";
 
 const AppRouter = () => (
   <Router>
-    <React.Fragment>
+    <div id="main-container">
       <Header />
       <Switch>
         <Route exact path="/" component={Dashboard} />
@@ -16,7 +16,7 @@ const AppRouter = () => (
         <Route path="/edit" component={EditExpense} />
         <Route component={NotFound} />
       </Switch>
-    </React.Fragment>
+    </div>
   </Router>
 );
 
