@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
+import React from "react";
+import ReactDOM from "react-dom";
+import AppRouter from "./routers/AppRouter";
+import "bootstrap/dist/css/bootstrap.css";
+import "./styles/main.css";
 
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
+ReactDOM.render(<AppRouter />, document.getElementById("root"));
