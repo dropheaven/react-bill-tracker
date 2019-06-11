@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+#main-container {
+  display: flex;
+}
+
+.card {
+  width: 10rem;
+  margin: 0 0.5rem;
+}
