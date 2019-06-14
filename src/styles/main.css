@@ -9,23 +9,36 @@ body {
 }
 
 #sidebar {
+  background: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  color: #ffe260;
+}
+
+#sidebar a {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+#sidebar a:hover {
+  color: #ffe260;
+  transform: scale(1.2);
+  text-decoration: none;
 }
 
 #expenses {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   margin: 2rem 1rem;
 }
 
-.card {
-  width: 45%;
-  margin: 0 0.5rem;
+#expenses .card {
+  width: 250px;
+  margin: 0.5rem 0.5rem;
   text-align: center;
 }
