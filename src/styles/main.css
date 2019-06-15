@@ -43,8 +43,9 @@ body {
   text-align: center;
 }
 
-#expenses h1 {
-  margin-bottom: 1rem;
+#expenses .card-header {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 #expenses button {
