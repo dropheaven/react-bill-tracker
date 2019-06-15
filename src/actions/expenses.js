@@ -1,10 +1,11 @@
-export const addExpense = ({ id, name, amount, createdAt = 0 } = {}) => ({
+export const addExpense = ({ id, name, category, amount, dueDate } = {}) => ({
   type: "ADD_EXPENSE",
   expense: {
     id,
     name,
+    category,
     amount,
-    createdAt
+    dueDate
   }
 });
 
