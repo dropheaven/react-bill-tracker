@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Expense = ({ name, category, dueDate, amount }) => (
-  <div className="card">
+  <div className="card border-dark">
+    <div className="card-header bg-transparent border-dark">{name}</div>
     <div className="card-body">
-      <h5 className="card-title">{name}</h5>
-      <h6 className="card-subtitle mb-2 text-muted">{category}</h6>
-      <h5 className="card-text">Due on</h5>
-      <h4 className="card-text">{dueDate}</h4>
-      <h1 className="card-text">${amount * 0.01}</h1>
+      <h4 className="card-title">${amount * 0.01}</h4>
+      <p className="card-text">Due on {dueDate}</p>
+    </div>
+    <div className="card-footer bg-transparent border-dark">
       <Link to="/">
         <button type="button" className="btn btn-primary">
           details
