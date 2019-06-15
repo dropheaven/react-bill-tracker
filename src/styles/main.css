@@ -48,14 +48,27 @@ body {
   font-weight: bold;
 }
 
-#expenses button {
+#expenses button,
+#expense-form button {
   margin: 0 0.75rem;
   background: #333;
   border-color: #333;
   color: #ffe260;
 }
 
-#expenses button:hover {
+#expenses button:hover,
+#expense-form button:hover {
   background: #ffe260;
   color: #333;
+}
+
+/* Expense Form */
+#expense-form {
+  margin: 5rem 15rem;
+}
+
+.form-control:focus {
+  border-color: #ffe260;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(255, 226, 96, 0.6);
 }
