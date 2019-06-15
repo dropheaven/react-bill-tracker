@@ -24,6 +24,12 @@ export default class ExpenseForm extends React.Component {
 
   onSubmit = e => {
     e.preventDefault();
+
+    this.props.onSubmit({
+      name: this.state.name,
+      amount: this.state.amount,
+      dueDate: this.state.dueDate
+    });
   };
 
   render() {
@@ -60,9 +66,7 @@ export default class ExpenseForm extends React.Component {
               required
             />
           </div>
-          <button type="button" className="btn btn-primary">
-            add expense
-          </button>
+          <button className="btn btn-primary">add expense</button>
         </form>
       </div>
     );
