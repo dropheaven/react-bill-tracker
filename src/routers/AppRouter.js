@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Dashboard from "../components/Dashboard";
 import AddExpense from "../components/AddExpense";
 import EditExpense from "../components/EditExpense";
+import ShowExpense from "../components/ShowExpense";
 import NotFound from "../components/NotFound";
 
 const AppRouter = () => (
@@ -12,8 +13,9 @@ const AppRouter = () => (
       <Header />
       <Switch>
         <Route exact path="/" component={Dashboard} />
-        <Route path="/create" component={AddExpense} />
-        <Route path="/edit" component={EditExpense} />
+        <Route path="/expenses/new" component={AddExpense} />
+        <Route path="/expenses/:id/edit" component={EditExpense} />
+        <Route path="/expenses/:id" component={ShowExpense} />
         <Route component={NotFound} />
       </Switch>
     </div>
