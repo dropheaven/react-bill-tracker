@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Expense = ({ name, category, dueDate, amount }) => (
+const Expense = ({ id, name, category, dueDate, amount }) => (
   <div className="card border-dark">
     <div className="card-header bg-transparent border-dark">{name}</div>
     <div className="card-body">
@@ -9,12 +9,12 @@ const Expense = ({ name, category, dueDate, amount }) => (
       <p className="card-text">Due on {dueDate}</p>
     </div>
     <div className="card-footer bg-transparent border-dark">
-      <Link to="/">
+      <Link to={`/expenses/${id}`}>
         <button type="button" className="btn btn-primary">
           details
         </button>
       </Link>
-      <Link to="/">
+      <Link to={`/expenses/${id}/edit`}>
         <button type="button" className="btn btn-primary">
           edit
         </button>
